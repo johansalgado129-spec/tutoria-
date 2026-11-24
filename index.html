@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0d1524">
+  <meta name="description" content="Presentación interactiva de recuperación de matemáticas de grado décimo: seis temas, ejemplos desarrollados y ejercicios de repaso.">
+  <title>Matemáticas 10 | Taller de recuperación</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="presentation" id="app">
+    <header class="topbar" aria-label="Barra de navegación">
+      <a class="brand" href="#/0"><span class="brand-mark">M<span>10</span></span><span class="brand-copy">TALLER DE RECUPERACIÓN <small>MATEMÁTICAS · GRADO DÉCIMO</small></span></a>
+      <div class="top-right"><span id="chapter-label">Introducción</span><span class="top-divider"></span><span id="slide-count">01 / 40</span><button id="overview-btn" class="icon-btn" title="Ver todas las diapositivas" aria-label="Índice de diapositivas">Índice</button><button id="fullscreen-btn" class="icon-btn" title="Pantalla completa" aria-label="Pantalla completa">Pantalla completa</button></div>
+    </header>
+    <div id="progress" class="progress" aria-hidden="true"></div>
+    <main id="stage" class="stage" tabindex="-1" aria-live="polite"></main>
+    <footer class="controls"><div class="keyboard-hint">TECLADO <kbd>←</kbd> <kbd>→</kbd> PARA NAVEGAR <span class="hint-separator">/</span> <kbd>ESPACIO</kbd> PARA REVELAR PASOS</div><div class="nav-actions"><button class="nav-btn" id="prev-btn" aria-label="Diapositiva anterior">Anterior</button><button class="nav-btn nav-next" id="next-btn" aria-label="Siguiente diapositiva">Siguiente <span aria-hidden="true">›</span></button></div></footer>
+    <dialog id="overview" class="overview"><div class="overview-head"><h2>Índice de la presentación</h2><button id="close-overview" class="icon-btn" aria-label="Cerrar índice">Cerrar</button></div><div id="overview-list" class="overview-grid"></div></dialog>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
